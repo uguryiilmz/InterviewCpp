@@ -24,7 +24,7 @@ public:
 	int findMinGates(vector<int> arrQ, vector<int> depQ, int flight) {
 		sort(arrQ.begin(), arrQ.end());
 		sort(depQ.begin(), depQ.end());
-		int count = 0;
+		int count = 1;
 		int deppointer = 0;
 		for (int i = 1; i < flight; i++) {
 			if (arrQ[i] >= depQ[deppointer]) {
